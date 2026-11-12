@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ochto — todas as suas contas do Claude Code, lado a lado</title>
+    <meta name="description" content="Um app para Mac que roda duas ou três contas do Claude Code ao mesmo tempo, com o estado de cada sessão ao vivo e os limites de 5 horas e semanal de cada conta. 7 dias grátis, pagamento único." />
+    <meta property="og:title" content="Ochto — todas as suas contas do Claude Code, lado a lado" />
+    <meta property="og:description" content="Rode duas ou três contas do Claude Code ao mesmo tempo, numa janela só." />
+    <meta property="og:image" content="../assets/social.png" />
+    <link rel="icon" href="../assets/icon.png" />
+    <link rel="alternate" hreflang="en" href="../" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <img src="../assets/wordmark.svg" alt="Ochto" height="30" />
+        <div class="links">
+          <a href="#preco">Preço</a>
+          <a href="#perguntas">Perguntas</a>
+          <a href="../" hreflang="en">English</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <h1>Todas as suas contas do Claude Code, <span class="o">lado a lado</span>.</h1>
+          <p class="lead">
+            O Ochto roda duas ou três contas do Claude Code ao mesmo tempo, numa janela só. Cada sessão consome só da
+            sua conta. Você vê quem está esperando você e quanto sobra de cada limite.
+          </p>
+          <div class="cta">
+            <a class="button" href="https://github.com/pportella23/ochto-releases/releases/latest/download/Ochto-arm64.dmg">Baixar teste grátis</a>
+            <a class="button secondary-button" href="#preco">Comprar · R$ 149</a>
+          </div>
+          <p class="small">7 dias grátis, sem cadastro · Apple silicon · macOS 13+ · requer o Claude Code</p>
+        </div>
+        <img class="mascot" src="../assets/ochto-wave.svg" alt="" width="260" height="260" />
+      </header>
+
+      <div class="demo">
+        <img src="../assets/demo.gif" alt="Ochto com três contas do Claude Code: estados ao vivo, a próxima sessão esperando você e a busca" />
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Contas lado a lado</h3>
+          <p>Pessoal, trabalho e um projeto paralelo, cada uma logada pelo <code>/login</code> do próprio Claude Code. As sessões nunca misturam contas.</p>
+        </div>
+        <div class="feature">
+          <h3>Quem está esperando você</h3>
+          <p>Um ponto por sessão: trabalhando, esperando você, concluída. ⌘J leva à próxima que espera você, em qualquer conta.</p>
+        </div>
+        <div class="feature">
+          <h3>Limites de relance</h3>
+          <p>Medidores de 5 horas e semanal para cada conta, sem abrir sessão. Números e horário de reset no hover.</p>
+        </div>
+      </div>
+
+      <section class="pricing" id="preco">
+        <h2>Um preço, para sempre seu</h2>
+        <div class="price-card">
+          <div class="price">R$ 149</div>
+          <div class="small">pagamento único · atualizações incluídas · 2 Macs · Pix ou cartão</div>
+          <a class="button" href="https://checkout.dodopayments.com/buy/pdt_LIVE_BRL_TODO?quantity=1&redirect_url=https%3A%2F%2Fpportella23.github.io%2Fochto-releases%2Fthanks.html&country=BR">Comprar o Ochto</a>
+          <p class="small">
+            Teste grátis por 7 dias antes. Depois do pagamento, a chave de licença chega por e-mail: cole em Ochto › Licença…
+            O checkout soma o IOF de 3,5% cobrado em pagamentos em reais.
+            Fora do Brasil? <a href="https://checkout.dodopayments.com/buy/pdt_LIVE_USD_TODO?quantity=1&redirect_url=https%3A%2F%2Fpportella23.github.io%2Fochto-releases%2Fthanks.html">Compre em US$ 39</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="text">
+        <h2>Sua máquina, seus logins</h2>
+        <p>
+          O Ochto roda o <code>claude</code> oficial, sem modificação, para você usar. Você entra pelo login da própria
+          Anthropic, e o Ochto nunca lê os seus tokens nem o Keychain. Não há conta do Ochto nem telemetria.
+        </p>
+        <p>
+          Cada conta fica na própria pasta, e o Ochto acompanha as sessões pelos hooks e pela status line do Claude Code.
+          O seu <code>~/.claude</code> e as suas configurações ficam intactos.
+        </p>
+      </section>
+
+      <section class="text faq" id="perguntas">
+        <h2>Perguntas</h2>
+        <h3>O que acontece depois dos 7 dias de teste?</h3>
+        <p>Suas contas, projetos e histórico continuam lá. Para abrir sessões, é preciso a licença; as sessões já abertas continuam rodando.</p>
+        <h3>Em quantos Macs posso usar?</h3>
+        <p>Dois por licença. Você libera um Mac quando quiser em Ochto › Licença… › Desativar neste Mac.</p>
+        <h3>Preciso de assinatura do Claude?</h3>
+        <p>Sim. O Ochto roda o Claude Code, então cada conta precisa de acesso a ele (Pro, Max, Team ou Enterprise). O uso de cada conta é cobrado pela Anthropic, como sempre.</p>
+        <h3>O que o Ochto envia pela internet?</h3>
+        <p>Só duas coisas: a chave de licença e o id da ativação, para ativar e conferir a licença com o serviço de pagamento, e a verificação de atualização no GitHub. Nunca os seus prompts, código, contas ou uso.</p>
+        <h3>A Anthropic permite isso?</h3>
+        <p>
+          O Ochto roda o Claude Code sem modificação, e você entra com a sua assinatura pelo login da Anthropic.
+          Cabe a você usar cada conta dentro dos <a href="https://www.anthropic.com/legal/consumer-terms">termos da Anthropic</a>.
+        </p>
+        <h3>E se eu não gostar?</h3>
+        <p>Peça reembolso em até 14 dias da compra, pelo link do e-mail de recibo.</p>
+      </section>
+
+      <footer>
+        <a href="../terms.html">Termos e privacidade</a> ·
+        <a href="https://github.com/pportella23/ochto-releases/issues">Suporte</a> ·
+        <a href="https://github.com/pportella23/ochto-releases/releases">Versões</a><br />
+        Um app independente para o Claude Code. Não é feito, afiliado nem endossado pela Anthropic. Pagamentos processados
+        pela Dodo Payments, que é a vendedora oficial (merchant of record).
+      </footer>
+    </div>
+  </body>
+</html>

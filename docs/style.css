@@ -1,0 +1,251 @@
+/* Ochto site. Brand: Caprasimo (titles), Atkinson Hyperlegible (text). No external requests. */
+@font-face {
+  font-family: Caprasimo;
+  src: url('assets/fonts/caprasimo-latin-400-normal.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: Atkinson;
+  src: url('assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Atkinson;
+  src: url('assets/fonts/atkinson-hyperlegible-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --orange: #f28b30;
+  --ink: #1e3557;
+  --sand: #fff3e0;
+  --sea: #1f7fb6;
+  --foam: #8ed0e6;
+  --sun: #ffc93c;
+  --card: #ffffff;
+  --quiet: #5b6b82;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--sand);
+  color: var(--ink);
+  font-family: Atkinson, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--sea);
+}
+
+.wrap {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+nav .links {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 0 24px;
+}
+
+h1,
+h2 {
+  font-family: Caprasimo, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  margin: 16px 0 12px;
+  font-size: 54px;
+  line-height: 1.08;
+}
+
+h1 .o {
+  color: var(--orange);
+}
+
+.lead {
+  margin: 0 0 28px;
+  font-size: 21px;
+  color: var(--quiet);
+}
+
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: var(--ink);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 15px;
+}
+
+.brew {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid #f1dcc0;
+}
+
+.small {
+  font-size: 15px;
+  color: var(--quiet);
+}
+
+.demo {
+  margin: 32px 0 8px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 50px rgba(30, 53, 87, 0.18);
+  background: #fff;
+}
+
+.demo img {
+  display: block;
+  width: 100%;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 48px 0 16px;
+}
+
+.feature {
+  padding: 22px;
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 19px;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--quiet);
+}
+
+section.text {
+  max-width: 760px;
+  padding: 32px 0;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 32px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 28px 0 48px;
+  border-top: 1px solid #f1dcc0;
+  font-size: 15px;
+  color: var(--quiet);
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero img.mascot {
+    width: 180px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.pricing {
+  padding: 40px 0 8px;
+  text-align: center;
+}
+
+.price-card {
+  max-width: 460px;
+  margin: 16px auto 0;
+  padding: 28px;
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: 0 10px 30px rgba(30, 53, 87, 0.08);
+}
+
+.price {
+  font-family: Caprasimo, Georgia, serif;
+  font-size: 52px;
+  line-height: 1;
+}
+
+.price-card .button {
+  margin: 18px 0 6px;
+}
+
+.faq h3 {
+  margin: 22px 0 4px;
+  font-size: 18px;
+}
+
+.faq p {
+  margin: 0;
+  color: var(--quiet);
+}
+
+.legal h2 {
+  margin-top: 28px;
+  font-size: 26px;
+}

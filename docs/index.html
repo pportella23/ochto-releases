@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ochto — all your Claude Code accounts, side by side</title>
+    <meta name="description" content="A Mac app that runs two or three Claude Code accounts at the same time, with live session states and 5-hour and weekly limits per account. 7-day free trial, one-time purchase." />
+    <meta property="og:title" content="Ochto — all your Claude Code accounts, side by side" />
+    <meta property="og:description" content="Run two or three Claude Code accounts at the same time, in one window." />
+    <meta property="og:image" content="assets/social.png" />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="alternate" hreflang="pt-BR" href="pt/" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <nav>
+        <img src="assets/wordmark.svg" alt="Ochto" height="30" />
+        <div class="links">
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="pt/" hreflang="pt-BR">Português</a>
+        </div>
+      </nav>
+
+      <header class="hero">
+        <div>
+          <h1>All your Claude Code accounts, <span class="o">side by side</span>.</h1>
+          <p class="lead">
+            Ochto runs two or three Claude Code accounts at the same time, in one window. Each session spends only its
+            own account. You see who is waiting for you and how much of each limit is left.
+          </p>
+          <div class="cta">
+            <a class="button" href="https://github.com/pportella23/ochto-releases/releases/latest/download/Ochto-arm64.dmg">Download free trial</a>
+            <a class="button secondary-button" href="#pricing">Buy · US$ 39</a>
+          </div>
+          <p class="small">7 days free, no sign-up · Apple silicon · macOS 13+ · requires Claude Code</p>
+        </div>
+        <img class="mascot" src="assets/ochto-wave.svg" alt="" width="260" height="260" />
+      </header>
+
+      <div class="demo">
+        <img src="assets/demo.gif" alt="Ochto with three Claude Code accounts: live states, the next session waiting for you and search" />
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <h3>Accounts side by side</h3>
+          <p>Personal, work and a side project, each logged in with Claude Code's own <code>/login</code>. Sessions never mix accounts.</p>
+        </div>
+        <div class="feature">
+          <h3>Who is waiting for you</h3>
+          <p>One dot per session: working, waiting for you, done. ⌘J jumps to the next one waiting, in any account.</p>
+        </div>
+        <div class="feature">
+          <h3>Limits at a glance</h3>
+          <p>5-hour and weekly meters for every account, without opening a session. Numbers and reset times on hover.</p>
+        </div>
+      </div>
+
+      <section class="pricing" id="pricing">
+        <h2>One price, yours to keep</h2>
+        <div class="price-card">
+          <div class="price">US$ 39</div>
+          <div class="small">one-time payment · updates included · 2 Macs</div>
+          <a class="button" href="https://checkout.dodopayments.com/buy/pdt_LIVE_USD_TODO?quantity=1&redirect_url=https%3A%2F%2Fpportella23.github.io%2Fochto-releases%2Fthanks.html">Buy Ochto</a>
+          <p class="small">
+            Try it free for 7 days first. After paying you get a license key by e-mail; paste it in Ochto › License…
+            In Brazil? <a href="pt/#preco">Buy in reais with Pix</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="text">
+        <h2>Your machine, your logins</h2>
+        <p>
+          Ochto runs the official <code>claude</code> CLI, unmodified, for you to use. You sign in through Anthropic's
+          own login, and Ochto never reads your tokens or Keychain. There is no Ochto account and no telemetry.
+        </p>
+        <p>
+          It keeps every account in its own folder and learns about your sessions from Claude Code's hooks and status
+          line. Your <code>~/.claude</code> and your own settings stay untouched.
+        </p>
+      </section>
+
+      <section class="text faq" id="faq">
+        <h2>Questions</h2>
+        <h3>What happens after the 7-day trial?</h3>
+        <p>Your accounts, projects and history stay. Opening sessions needs a license; sessions already open keep running.</p>
+        <h3>How many Macs can I use?</h3>
+        <p>Two per license. You can free a Mac any time in Ochto › License… › Deactivate on this Mac.</p>
+        <h3>Do I need a Claude subscription?</h3>
+        <p>Yes. Ochto runs Claude Code, so each account needs Claude Code access (Pro, Max, Team or Enterprise). Each account's usage is billed by Anthropic as usual.</p>
+        <h3>What does Ochto send over the internet?</h3>
+        <p>Only two things: your license key and its activation id, to activate and check the license with our payment provider, and an update check against GitHub. Never your prompts, code, accounts or usage.</p>
+        <h3>Is this allowed by Anthropic?</h3>
+        <p>
+          Ochto runs the unmodified Claude Code CLI, and you sign in with your own subscription through Anthropic's login.
+          You are responsible for using each account within
+          <a href="https://www.anthropic.com/legal/consumer-terms">Anthropic's terms</a>.
+        </p>
+        <h3>Refunds?</h3>
+        <p>If Ochto is not for you, ask for a refund within 14 days of purchase, using the link in your receipt e-mail.</p>
+      </section>
+
+      <footer>
+        <a href="terms.html">Terms &amp; privacy</a> ·
+        <a href="https://github.com/pportella23/ochto-releases/issues">Support</a> ·
+        <a href="https://github.com/pportella23/ochto-releases/releases">Releases</a><br />
+        An independent app for Claude Code. Not made by, affiliated with or endorsed by Anthropic. Payments processed by
+        Dodo Payments, the merchant of record.
+      </footer>
+    </div>
+  </body>
+</html>
