@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-market="brl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
     <meta property="og:image" content="../assets/social.png" />
     <link rel="icon" href="../assets/icon.png" />
     <link rel="alternate" hreflang="en" href="../" />
+    <script src="../market.js"></script>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
@@ -32,7 +33,7 @@
           </p>
           <div class="cta">
             <a class="button" href="https://github.com/pportella23/ochto-releases/releases/latest/download/Ochto-arm64.dmg">Baixar teste grátis</a>
-            <a class="button secondary-button" href="#preco">Comprar · R$ 149</a>
+            <a class="button secondary-button" href="#preco">Comprar · <span class="only-brl">R$ 149</span><span class="only-usd">US$ 39</span></a>
           </div>
           <p class="small">7 dias grátis, sem cadastro · Apple silicon · macOS 13+ · requer o Claude Code</p>
         </div>
@@ -61,13 +62,13 @@
       <section class="pricing" id="preco">
         <h2>Um preço, para sempre seu</h2>
         <div class="price-card">
-          <div class="price">R$ 149</div>
-          <div class="small">pagamento único · atualizações incluídas · 2 Macs · Pix ou cartão</div>
-          <a class="button" href="#preco">Comprar o Ochto</a>
+          <div class="price"><span class="only-brl">R$ 149</span><span class="only-usd">US$ 39</span></div>
+          <div class="small">pagamento único · atualizações incluídas · 2 Macs<span class="only-brl"> · Pix ou cartão</span></div>
+          <a class="button only-brl" href="https://pportella23.github.io/ochto-releases/pt/#preco">Comprar o Ochto</a>
+          <a class="button only-usd" href="https://pportella23.github.io/ochto-releases/#pricing">Comprar o Ochto</a>
           <p class="small">
             Teste grátis por 7 dias antes. Depois do pagamento, a chave de licença chega por e-mail: cole em Ochto › Licença…
-            O checkout soma o IOF de 3,5% cobrado em pagamentos em reais.
-            Fora do Brasil? <a href="#pricing">Compre em US$ 39</a>.
+            <span class="only-brl">O checkout soma o IOF de 3,5% cobrado em pagamentos em reais.</span>
           </p>
         </div>
       </section>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-market="usd">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +10,7 @@
     <meta property="og:image" content="assets/social.png" />
     <link rel="icon" href="assets/icon.png" />
     <link rel="alternate" hreflang="pt-BR" href="pt/" />
+    <script src="market.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -32,7 +33,7 @@
           </p>
           <div class="cta">
             <a class="button" href="https://github.com/pportella23/ochto-releases/releases/latest/download/Ochto-arm64.dmg">Download free trial</a>
-            <a class="button secondary-button" href="#pricing">Buy · US$ 39</a>
+            <a class="button secondary-button" href="#pricing">Buy · <span class="only-usd">US$ 39</span><span class="only-brl">R$ 149</span></a>
           </div>
           <p class="small">7 days free, no sign-up · Apple silicon · macOS 13+ · requires Claude Code</p>
         </div>
@@ -61,12 +62,13 @@
       <section class="pricing" id="pricing">
         <h2>One price, yours to keep</h2>
         <div class="price-card">
-          <div class="price">US$ 39</div>
-          <div class="small">one-time payment · updates included · 2 Macs</div>
-          <a class="button" href="#pricing">Buy Ochto</a>
+          <div class="price"><span class="only-usd">US$ 39</span><span class="only-brl">R$ 149</span></div>
+          <div class="small">one-time payment · updates included · 2 Macs<span class="only-brl"> · Pix or card</span></div>
+          <a class="button only-usd" href="https://pportella23.github.io/ochto-releases/#pricing">Buy Ochto</a>
+          <a class="button only-brl" href="https://pportella23.github.io/ochto-releases/pt/#preco">Buy Ochto</a>
           <p class="small">
             Try it free for 7 days first. After paying you get a license key by e-mail; paste it in Ochto › License…
-            In Brazil? <a href="pt/#preco">Buy in reais with Pix</a>.
+            <span class="only-brl">Payments in reais include the 3.5% IOF tax, added at checkout.</span>
           </p>
         </div>
       </section>

@@ -249,3 +249,16 @@ footer {
   margin-top: 28px;
   font-size: 26px;
 }
+
+/* One price per visitor; <html data-market> is set by the page (see the inline script). */
+html[data-market='usd'] .only-brl,
+html[data-market='brl'] .only-usd {
+  display: none;
+}
+
+/* Thanks page: one state at a time, from Dodo's ?status (see thanks.html). */
+html:not([data-state='succeeded']) .only-succeeded,
+html:not([data-state='processing']) .only-processing,
+html:not([data-state='failed']) .only-failed {
+  display: none;
+}

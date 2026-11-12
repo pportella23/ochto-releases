@@ -1,10 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-market="usd" data-state="succeeded">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Thanks for buying Ochto</title>
+    <meta name="robots" content="noindex" />
+    <title>Ochto</title>
     <link rel="icon" href="assets/icon.png" />
+    <script src="market.js"></script>
+    <script>
+      // Dodo returns here with ?status=succeeded|failed|expired|processing|requires_*. It is only a hint for
+      // what to say; the license key itself is issued (and e-mailed) by Dodo only for paid orders.
+      (function () {
+        var status = new URLSearchParams(location.search).get('status');
+        var state = !status || status === 'succeeded' ? 'succeeded' : status === 'failed' || status === 'expired' || status === 'cancelled' ? 'failed' : 'processing';
+        document.documentElement.setAttribute('data-state', state);
+      })();
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,7 +23,8 @@
       <nav>
         <a href="./"><img src="assets/wordmark.svg" alt="Ochto" height="30" /></a>
       </nav>
-      <header class="hero">
+
+      <header class="hero only-succeeded">
         <div>
           <h1>Thank you! <span class="o">Obrigado!</span></h1>
           <p class="lead">
@@ -28,6 +40,37 @@
           </div>
         </div>
         <img class="mascot" src="assets/ochto-party.svg" alt="" width="260" height="260" />
+      </header>
+
+      <header class="hero only-processing">
+        <div>
+          <h1>Almost there <span class="o">Quase lá</span></h1>
+          <p class="lead">
+            Your payment is still being confirmed. With Pix this usually takes a few seconds. Once it is confirmed, the
+            license key arrives by e-mail.
+          </p>
+          <p class="lead">
+            O pagamento ainda está sendo confirmado. No Pix, isso costuma levar poucos segundos. Assim que for confirmado,
+            a chave de licença chega por e-mail.
+          </p>
+          <div class="cta">
+            <a class="button" href="https://github.com/pportella23/ochto-releases/releases/latest/download/Ochto-arm64.dmg">Download Ochto</a>
+          </div>
+        </div>
+        <img class="mascot" src="assets/ochto-work.svg" alt="" width="260" height="260" />
+      </header>
+
+      <header class="hero only-failed">
+        <div>
+          <h1>Payment didn't go through <span class="o">O pagamento não foi concluído</span></h1>
+          <p class="lead">Nothing was charged. Check your details (for Pix, the CPF) and try again.</p>
+          <p class="lead">Nada foi cobrado. Confira os seus dados (no Pix, o CPF) e tente de novo.</p>
+          <div class="cta">
+            <a class="button only-usd" href="https://pportella23.github.io/ochto-releases/#pricing">Try again</a>
+            <a class="button only-brl" href="https://pportella23.github.io/ochto-releases/pt/#preco">Tentar de novo</a>
+          </div>
+        </div>
+        <img class="mascot" src="assets/ochto-alert.svg" alt="" width="260" height="260" />
       </header>
     </div>
   </body>
